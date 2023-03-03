@@ -16,6 +16,11 @@ function Start() {
                 content writing, software development, and machine learning, 
                 enthusiastic about building
                 products that make a world of difference.</p>
+
+            <div className="Circle interestcircle"></div>
+            <div className="subheadsquare"></div>   
+            <p class="heading">INTERESTS</p>
+            <p class="subheading">what I'm into, lol</p>
             <img src={Vector2} alt="prop" className="Vector2" />
             <img src={Vector3} alt="prop" className="Vector3" />
             <img src={Vector} alt="prop" className="Vector" />
