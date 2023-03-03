@@ -1,22 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&display=swap');
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #3A3939;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6480C7; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
 
 .Description {
 
   position: absolute;
   width: 507.4px;
   height: 266px;
-  left: 641.78px;
-  top: 108.02px;
-
+  right: 85px;
+  top: 58.02px;
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 38.1254px;
   line-height: 38px;
   text-align: right;
-
   color: #FFFFFF;
+  text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.25);
+
 }
 
 body {
@@ -33,22 +53,25 @@ body {
   left: 124.97px;
   top: 40.24px;
   background: #920D0D;
+  box-shadow: -40px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .Circle2 {
   width: 366.43px;
   height: 366.43px;
   left: 751.92px;
-  top: 254.17px;
-  background: #D5C21D;
+  top: 154.17px;
+  background: #6480C7;
+  box-shadow: -40px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .StarterImage {
   position: absolute;
-  width: 675.67px;
-  height: 658.72px;
-  left: 0px;
-  top: 0px;
+  width: 575.67px;
+  height: 558.72px;
+  left: 50px;
+  top: 25px;
+  filter: drop-shadow(-42px 4px 0px rgba(0, 0, 0, 0.25));
 }
 
 .Vector {
@@ -57,40 +80,25 @@ body {
   max-width: max-content;
   height: 300.77px;
   left: 0px;
-  top: 506.22px;
+  top: 436.22px;
 }
 
-.heading {
+.Vector3 {
+  background-color: null;
   position: absolute;
-  width: 393px;
-  height: 72px;
-  left: 751.92px;
-  top: 806.99px;
-
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72.3604px;
-  line-height: 72px;
-
-  color: #FFFFFF;
+  max-width: 100%;
+  height: 300.77px;
+  left: 0px;
+  top: 456.22px;
 }
 
-.subheading {
+.Vector2 {
+  background-color: null;
   position: absolute;
-  width: 527.4px;
-  height: 38px;
-  left: 610.01px;
-  top: 879px;
-
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 38.1254px;
-  line-height: 38px;
-  text-align: right;
-
-  color: #FFFFFF;
+  max-width: 100%;
+  height: 300.77px;
+  left: 0px;
+  top: 476.22px;
 }
 
 .Circle3 {
@@ -98,5 +106,42 @@ body {
   height: 230.87px;
   left: 974.32px;
   top: 728.62px;
+  background: #920D0D;
+}
+
+.interests {
+  position: absolute;
+width: 843.23px;
+height: 407.68px;
+left: 302px;
+top: 875px;
+
+}
+
+.pendulums {
+  position: absolute;
+width: 366.43px;
+height: 366.43px;
+box-shadow: 0px 28px 0px rgba(0, 0, 0, 0.25);
+}
+
+.pendulum1{
+  left: -179px;
+  top: 887px;
+  
+  background: #6480C7;
+}
+
+.pendulum2{
+  left: -179px;
+  top: 1071.43px;
+  
+  background: #FFFFFF;
+}
+
+.pendulum3{
+  left: -179px;
+  top: 1255.85px;
+  
   background: #920D0D;
 }
