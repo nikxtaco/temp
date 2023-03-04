@@ -21,8 +21,8 @@ function Start() {
         
             <div className="Circle interestcircle"></div>
             <div className="subheadsquare"></div>
-            <p class="heading">INTERESTS</p>
-            <p class="subheading">what I'm into, lol</p>
+            <p className="heading">INTERESTS</p>
+            <p className="subheading">what I'm into, lol</p>
             <img src={Vector2} alt="prop" className="Vectors" style={{top:'476.22px'}}/>
             <img src={Vector3} alt="prop" className="Vectors" style={{top:'456.22px'}}/>
             <img src={Vector} alt="prop" className="Vectors" style={{top:'436.22px'}}/>
@@ -34,7 +34,7 @@ function Start() {
             <img src={interests} alt="prop" className="interests" />
 
 
-            <div class="circle"></div>
+            <div className="circle"></div>
 
 
             <div className="Circle" style={{ width: '230.87px', height: '230.87px', top: '1728.62px', background: '#920D0D' }}></div>
