@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&display=swap');
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 19px;
 }
 
 /* Track */
@@ -72,31 +72,12 @@ body {
   filter: drop-shadow(-42px 4px 0px rgba(0, 0, 0, 0.25));
 }
 
-.Vector {
+.Vectors {
   background-color: null;
   position: absolute;
   max-width: max-content;
   height: 300.77px;
   left: 0px;
-  top: 436.22px;
-}
-
-.Vector3 {
-  background-color: null;
-  position: absolute;
-  max-width: max-content;
-  height: 300.77px;
-  left: 0px;
-  top: 456.22px;
-}
-
-.Vector2 {
-  background-color: null;
-  position: absolute;
-  max-width: max-content;
-  height: 300.77px;
-  left: 0px;
-  top: 476.22px;
 }
 
 .Circle3 {
@@ -114,34 +95,6 @@ height: 407.68px;
 left: 302px;
 top: 875px;
 
-}
-
-.pendulums {
-  position: absolute;
-width: 366.43px;
-height: 366.43px;
-box-shadow: 0px 28px 0px rgba(0, 0, 0, 0.25);
-}
-
-.pendulum1{
-  left: -179px;
-  top: 887px;
-  
-  background: #6480C7;
-}
-
-.pendulum2{
-  left: -179px;
-  top: 1071.43px;
-  
-  background: #FFFFFF;
-}
-
-.pendulum3{
-  left: -179px;
-  top: 1255.85px;
-  
-  background: #920D0D;
 }
 
 .interestcircle{
@@ -206,11 +159,69 @@ p{
 
 .subheadsquare{
   position: absolute;
-width: 297px;
-height: 45px;
-left: 850.01px;
-top: 790px;
+  width: 297px;
+  height: 45px;
+  left: 850.01px;
+  top: 790px;
+  background: #6480C7;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
 
-background: #6480C7;
-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+.pendulums {
+  position: absolute;
+  width: 366px;
+  height: 366px;
+  border-radius: 50%;
+  box-shadow: 0px 28px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.pendulum1{
+  top: 1000px;
+  offset-path: path("M19.5 0.5C-87.6823 465.41 296.666 613.568 422 590.5");
+  animation: move 4s linear 5;
+  background-color: #6480C7;
+}
+
+.pendulum2{
+  top: 1230px;
+  offset-path: path("M-0.5 1C43.3565 324.42 172.681 389.64 667.5 364.5");
+  animation: move 4s linear 5;
+  background-color: #FFFFFF;
+}
+
+.pendulum3{
+  top: 1430px;
+  offset-path: path("M-1.5 0.5C54.2148 160.26 244.098 196.81 874.5 164.5");
+  animation: move 4s linear 5;
+  background-color: #920D0D;
+}
+
+ 
+
+@keyframes move {
+  100% { 
+    offset-distance: 100%;
+  }
+}
+
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(-50%, -50%);
+  transition: transform 2s ease;
+}
+
+.move-down {
+  transform: translate(-50%, 100%);
+}
+
+.move-up {
+  transform: translate(-50%, -200%);
 }
